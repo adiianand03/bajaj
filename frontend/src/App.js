@@ -29,7 +29,7 @@ function App() {
     event.preventDefault();
     try {
       const jsonData = JSON.parse(inputValue);
-      const result = await axios.post('http://localhost:3000/bfhl', jsonData);
+      const result = await axios.post('https://bajaj-ihtn.onrender.com/', jsonData);
       setResponse(result.data);
       setError(null);
     } catch (error) {
